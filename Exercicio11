@@ -1,0 +1,30 @@
+/*
+exercicio 11
+aleatorio
+     Gardar os contidos dos tres arrays seguintes nun ficheiro aleatorio (creado en modo lectura escritura)
+     tendo en conta que cada tres elementos que  ocupan a mesma posicion nos arrays  
+     representan os campos dun rexistro dunha taboa de produtos , onde cada produto ten 
+      un codigo unha descricion e un prezo:
+        String[] codes={"p1","p2","p3"};
+        String[] descricion ={"parafusos","cravos ","tachas"};
+        int[] prices ={3,4,5};
+      
+      nota: ter en conta que asignaremos unha lonxitude fixa a cada rexistro
+      así para o codigo asignaremos 3 caracteres(6 bytes), para a descricion 10caracteres(20bytes) eo prezo por ser un 
+      enteiro terá asignados 4 bytes, sendo o tamaño total do rexistro de 30 bytes
+      nota: a clase a usar e RandomAcessFile e os seus metodos para escritura e lectura 
+      de tipos primitivos de datos (writeChars(..)  , writeInt(..) , readChar()) 
+    
+      
+      debera crearse ou utilizarse   un método que rechee os espazos que faltan nos campos
+      codigo e descricion ata completar as lonxitudes de ditos campos cun caracter calquera.Pista : A clase String ten un metodo denonimado format que permite dar formato a unha cadea cadea.
+
+     
+      unha vez almacenados os tres rexistros deberemos ler e amosar o contido dos campos 
+      do rexistro que ocupa a posicion numero 2 (utilizando o metodo seek(..).
+      e decir deberia amosarse algo parecido a isto:
+      
+       p2
+        cravos 
+      4
+ */
