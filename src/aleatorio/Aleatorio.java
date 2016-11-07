@@ -16,18 +16,19 @@ public class Aleatorio {
     double [] prices = {3.0,4.0,5.0};
     
     RandomAccessFile ra = new RandomAccessFile("textoAleatorio.txt","rw");
-        
+    Product p = new Product();
+    
     for(int i=0;i<codes.length;i++){
-        /*   ra.seek(0);
-           ra.writeChars(String.format("%1$-10s",codes[i]));
+          //ra.seek(0);
+           ra.writeChars(String.format("%-10s",codes[i]));
            //ra.write('\t');
-           ra.close();*/
-           ra.seek(34);
-           ra.writeChars(String.format("%1$-25s", descricion[i]));
+          
+           //ra.seek(34);
+           ra.writeChars(String.format("%-25s", descricion[i]));
            //ra.write('\t');
-           ra.close();
-//           ra.writeDouble(prices[i]);
-        
+           
+        ra.writeDouble(prices[i]);
+        ra.close();
    
             
            
